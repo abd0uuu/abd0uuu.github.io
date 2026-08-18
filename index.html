@@ -1,26 +1,118 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abdou's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Under Construction</title>
 
     <style>
-     
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            background: #000;
+            color: #fff;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            font-family: "Courier New", monospace;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+
+            text-align: center;
+
+            padding: 100px 20px 40px;
+        }
+
+        h1 {
+            margin: 0 0 18px;
+
+            font-size: clamp(25px, 4vw, 34px);
+            font-weight: bold;
+        }
+
+        .gif {
+            display: block;
+
+            width: 100%;
+            max-width: 360px;
+            height: auto;
+
+            margin: 0 auto 20px;
+        }
+
+        .message {
+            margin: 0 0 35px;
+
+            font-size: clamp(16px, 2.5vw, 19px);
+            font-weight: bold;
+        }
+
+        .contact {
+            color: #ffd000;
+
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .contact:hover {
+            text-decoration: underline;
+        }
+
+        /* Phone screens */
+        @media (max-width: 600px) {
+            .container {
+                padding-top: 70px;
+            }
+
+            .gif {
+                max-width: 90%;
+            }
+
+            h1 {
+                margin-bottom: 15px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
+    <main class="container">
+
+        <h1>Under Construction</h1>
+
+        <!-- Put your GIF in the same folder and name it image.gif -->
+        <img
+            class="gif"
+            src="poki.gif"
+            alt="Website under construction"
+        >
+
+        <p class="message">
+            This website will be Available soon
+        </p>
+
+        <a
+            class="contact"
+            href="mailto:mgnt.abdou@gmail.com"
+        >
+            contact me: mgnt.abdou@gmail.com
+        </a>
+
+    </main>
 
 </body>
-    <img src="poki.gif" alt="Poki" class="gif">
-
-<style>
-.gif {
-    display: block;
-    max-width: 90%;
-    height: auto;
-    margin: 0 auto;
-}
-</style>
 </html>
+```
